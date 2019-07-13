@@ -12,6 +12,9 @@
 		78AB2DF922D7A60D0036E423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AB2DF722D7A60D0036E423 /* Main.storyboard */; };
 		78AB2DFB22D7A60F0036E423 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78AB2DFA22D7A60F0036E423 /* Assets.xcassets */; };
 		78AB2DFE22D7A60F0036E423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78AB2DFC22D7A60F0036E423 /* LaunchScreen.storyboard */; };
+		78AB2E0822D7AD9A0036E423 /* Resoults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AB2E0722D7AD9A0036E423 /* Resoults.swift */; };
+		78AB2E0A22D7AEFD0036E423 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AB2E0922D7AEFD0036E423 /* Item.swift */; };
+		78AB2E0D22D7AF850036E423 /* DataFercher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AB2E0C22D7AF850036E423 /* DataFercher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		78AB2DFA22D7A60F0036E423 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78AB2DFD22D7A60F0036E423 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78AB2DFF22D7A60F0036E423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78AB2E0722D7AD9A0036E423 /* Resoults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resoults.swift; sourceTree = "<group>"; };
+		78AB2E0922D7AEFD0036E423 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		78AB2E0C22D7AF850036E423 /* DataFercher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFercher.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 		78AB2DF222D7A60D0036E423 /* DemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				78AB2E0B22D7AF660036E423 /* New Group1 */,
+				78AB2E0522D7AD340036E423 /* New Group */,
 				78AB2DF322D7A60D0036E423 /* AppDelegate.swift */,
 				78AB2DF522D7A60D0036E423 /* ViewController.swift */,
 				78AB2DF722D7A60D0036E423 /* Main.storyboard */,
@@ -62,6 +70,23 @@
 				78AB2DFF22D7A60F0036E423 /* Info.plist */,
 			);
 			path = DemoApp;
+			sourceTree = "<group>";
+		};
+		78AB2E0522D7AD340036E423 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				78AB2E0722D7AD9A0036E423 /* Resoults.swift */,
+				78AB2E0922D7AEFD0036E423 /* Item.swift */,
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		78AB2E0B22D7AF660036E423 /* New Group1 */ = {
+			isa = PBXGroup;
+			children = (
+				78AB2E0C22D7AF850036E423 /* DataFercher.swift */,
+			);
+			path = "New Group1";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78AB2E0A22D7AEFD0036E423 /* Item.swift in Sources */,
+				78AB2E0D22D7AF850036E423 /* DataFercher.swift in Sources */,
 				78AB2DF622D7A60D0036E423 /* ViewController.swift in Sources */,
+				78AB2E0822D7AD9A0036E423 /* Resoults.swift in Sources */,
 				78AB2DF422D7A60D0036E423 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        DataFetcher.shared.getResolts(query: "tetris", page: 1) { (resoults, error) in
+            print(resoults)
+            print(error)
+        }
     }
-
-
 }
+
 
