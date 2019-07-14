@@ -13,4 +13,7 @@ struct Item: Codable {
     let id: Int
     let name: String
     let fullName: String
+    let watchersCount: Int
+    let forksCount: Int
+    let score: Double
 }

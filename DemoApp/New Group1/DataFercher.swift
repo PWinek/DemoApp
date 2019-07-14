@@ -10,9 +10,8 @@ import Foundation
 
 class DataFetcher {
     
-    // Inicjalizacja wzorca Singleton, który pozwala na utworzenie tylko jednego egzemplarza klasy w trakcie cyklu życiowego aplikacji
     private init() {}
-    static let shared = DataFetcher() // czy jest roznica miedzy tym czy najpierw zainicjalizuje, czy zadeklaruje stałą ?
+    static let shared = DataFetcher()
     
     let mainUrl = "https://api.github.com/"
     
@@ -24,7 +23,7 @@ class DataFetcher {
     }
     
     
-    private func genericGetFetcher<T: Codable>(urlString: String, completion: @escaping (T?, Error?) -> Void) { // 
+    private func genericGetFetcher<T: Codable>(urlString: String, completion: @escaping (T?, Error?) -> Void) {
         
         guard let url = URL(string: urlString) else {
             completion(nil, FetcherError.wrongURL)
@@ -32,11 +31,14 @@ class DataFetcher {
         }
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            // 1. Pierwsze sprawdzenie
             guard error == nil else {
                 completion(nil, error)
                 return
             }
             
+            // 1. Drugie sprawdzenie
             guard let data = data else {
                 completion(nil, FetcherError.wrongData)
                 return
@@ -52,7 +54,6 @@ class DataFetcher {
                 completion(nil, err)
             }
         }
-        // }.resume()
         
         task.resume()
     }
